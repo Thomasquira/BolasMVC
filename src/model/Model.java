@@ -157,6 +157,27 @@ public class Model {
             p.moverAba();
         }
     }
+    public int getMinSize() {
+        return tamañoMinimo;
+    }
+    
+    public int getMaxSize() {
+        return tamañoMaximo;
+    }
+    
+    public int getMinSpeed() {
+        return velocidadMinima;
+    }
+    
+    public int getMaxSpeed() {
+        return velocidadMaxima;
+    }
+    
+    public void addEntity(Entity entity) {
+        if (entity instanceof Ball) {
+            ballList.add((Ball) entity);
+        }
+    }
 
     
 }

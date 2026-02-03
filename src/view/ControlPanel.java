@@ -22,6 +22,7 @@ public class ControlPanel extends JPanel {
     JTextField minimoTamaño, maximoTamaño, minimoVelocidad, maximoVelocidad;
     JLabel minTam, maxTam, minVel, maxVel;
     JCheckBox automatico;
+    JButton worldButton;
 
     public ControlPanel(View view) {
         this.view = view;
@@ -95,6 +96,12 @@ public class ControlPanel extends JPanel {
         gbc.gridx = 0;
         gbc.gridy = 11;
         add(maximoVelocidad, gbc);
+        
+        gbc.insets = new Insets(30, 5, 5, 5);
+        this.worldButton = new JButton("Generar Mundo");
+        gbc.gridx = 0;
+        gbc.gridy = 13;
+        add(worldButton, gbc);
 
         // --- Controles de reproducción (Play, Pause, Stop) ---
         JPanel controlButtonsPanel = new JPanel();
@@ -196,4 +203,7 @@ public class ControlPanel extends JPanel {
         this.stop = stop;
     }
 
+    public JButton getWorldButton() {
+        return worldButton;
+    }
 }

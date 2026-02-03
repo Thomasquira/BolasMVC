@@ -11,10 +11,12 @@ package model;
 public class BasicPhysicsEngine {
 
     private int speedX, speedY;
+    private Ball ball;
 
-    public BasicPhysicsEngine(int speedX, int speedY) {
+    public BasicPhysicsEngine(int speedX, int speedY, Ball ball) {
         this.speedX = speedX;
         this.speedY = speedY;
+        this.ball = ball;
     }
 
     public int getSpeedX() {
@@ -43,10 +45,12 @@ public class BasicPhysicsEngine {
             case NORTH_COLLISION:
             case SOUTH_COLLISION:
                 speedY = -speedY;
+              
                 break;
             case EAST_COLLISION:
             case WEST_COLLISION:
                 speedX = -speedX;
+               
                 break;
             default:
                 break;

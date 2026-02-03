@@ -84,6 +84,13 @@ public class Controller {
         model.setState(Model.STATE.PAUSE);
     }
 
+    public void generateRandomWorld() {
+        model.removeBalls();
+        
+        for (int i = 0; i < 10; i++) {
+            addBall();
+        }
+    }
     public void manejarEventoBola(Ball ball, BallEvent event) {
         eventManager.manejarEvento(ball, event);
     }

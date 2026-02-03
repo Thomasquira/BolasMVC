@@ -8,7 +8,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.Rectangle;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -23,7 +22,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import model.Ball;
 import model.Controlable;
-import model.ZonaCritica;
 
 /**
  * @author thomas
@@ -163,9 +161,9 @@ public class Viewer extends JPanel implements Runnable {
         g2.setColor(Color.BLACK);
 //        g2.draw(rect);
 
-        for (Ball ball : view.getAllBalls()) {
-            paintBall(ball, g2);
-        }
+         for (Ball ball : view.getAllBalls()) {
+            ball.render(g2); 
+         }
     }
 
 }

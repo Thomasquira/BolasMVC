@@ -3,21 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/view/View.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/view/ControlPanel.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/model/BallEvent.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/model/BasicPhysicsEngine.java</file>
+            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/Animation.java</file>
+            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/Animations/SpriteAnimation.java</file>
+            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/sprite.png</file>
+            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/Communications/Connections/HealthChannel.java</file>
             <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/model/Ball.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/balls/Animation.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/view/Viewer.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/model/Model.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/controller/Controller.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/controller/EventManager.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/model/ZonaCritica.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/view/DataPanel.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/model/Controlable.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/physics/PhysicsModel.java</file>
-            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/model/EventDetector.java</file>
+            <file>file:/C:/Users/thoma/Documents/NetBeansProjects/bolas/src/Communications/CommunicationsController.java</file>
         </group>
     </open-files>
 </project-private>

@@ -38,6 +38,7 @@ public class View extends JFrame {
         this.controlpanel = new ControlPanel(this);
         this.viewer = new Viewer(this);
         this.dataPanel = new DataPanel(this);
+        
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(850, 600);
@@ -53,7 +54,9 @@ public class View extends JFrame {
         controlpanel.getPlay().addActionListener(e -> controller.play());
         controlpanel.getPause().addActionListener(e -> controller.pause());
         controlpanel.getStop().addActionListener(e -> controller.stop());
-
+        controlpanel.getWorldButton().addActionListener(e -> {
+            generateRandomWorld();
+        });
      
         JPanel leftPanel = new JPanel(new GridBagLayout());
         GridBagConstraints leftGbc = new GridBagConstraints();
@@ -160,6 +163,15 @@ public class View extends JFrame {
             auto = false;
         }
     }
+    public void generateRandomWorld() {
+        controller.removeBalls();
+        
+        for (int i = 0; i < 15; i++) {
+            addBall();
+        }
+        
+        System.out.println("Nuevo mundo generado con 15 bolas");
+    }
 
     public Model getModel() {
         return model;
@@ -209,4 +221,14 @@ public class View extends JFrame {
     public void moverBolaAba() {
         controller.moverBolaAba();
     }
+
+    public ControlPanel getControlpanel() {
+        return controlpanel;
+    }
+
+    public void setControlpanel(ControlPanel controlpanel) {
+        this.controlpanel = controlpanel;
+    }
+    
+    
 }
